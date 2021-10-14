@@ -7,8 +7,6 @@ namespace EagleEyeAssessment.Models
 {
     public class MovieStats
     {
-        //movieId,watchDurationMs
-
         public int MovieId { get; set; }
         public decimal WatchDurationMs { get; set; }
     }

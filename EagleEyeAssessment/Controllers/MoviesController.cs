@@ -37,9 +37,7 @@ namespace EagleEyeAssessment.Controllers
                 .ThenByDescending(a=>a.ReleaseYear)
                 .ToList();
 
-
             return new JsonResult(results);
         }
-
     }
 }

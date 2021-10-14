@@ -11,11 +11,8 @@ namespace EagleEyeAssessment
 {
     public static class DBContext
     {
-
         public static List<MovieMetadata> MovieMetadata = new List<MovieMetadata>();
         public static List<MovieStats> MovieStats = new List<MovieStats>();
-
-
         public static void LoadMoviesFromFile()
         {
 
@@ -26,14 +23,11 @@ namespace EagleEyeAssessment
             MovieStats = statfilelines.Skip(1).Select(a => BuildMovieStatsFromString(a)).ToList();
 
         }
-
-
         static string[] ReadAllResourceLines(string resourceName)
         {
             string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), resourceName);
             return File.ReadAllLines(path);
         }
-
         static MovieMetadata BuildMovieMetadataFromString(string csvLine)
         {
 
@@ -51,7 +45,6 @@ namespace EagleEyeAssessment
 
             return movieMetadata;
         }
-
         static MovieStats BuildMovieStatsFromString(string csvLine)
         {
             string[] values = csvLine.Split(',');

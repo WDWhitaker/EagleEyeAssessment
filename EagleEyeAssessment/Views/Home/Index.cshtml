@@ -8,7 +8,6 @@
     <div><b>Norrington:</b> ... So it would seem.</div>
 </div>
 
-
 <div class="card">
     <div class="card-header">
         <h2 class="card-title">/Metadata</h2>
@@ -35,8 +34,6 @@
     </div>
 </div>
 
-
-
 <div class="card">
     <div class="card-header">
         <h2 class="card-title">/Metadata:id</h2>
@@ -52,7 +49,6 @@
     </div>
 </div>
 
-
 <div class="card">
     <div class="card-header">
         <h2 class="card-title">/movies/stats</h2>
@@ -62,12 +58,8 @@
     </div>
 </div>
 
-
-
 @section scripts{
-
     <script>
-
         var ApiHelper = (function () {
             var GetMetaDataFromId = function () {
                 var url = "/metadata/" + $("#matadatagetid").val();
@@ -81,7 +73,5 @@
                 GetMetaDataFromId
             }
         })();
-
     </script>
-
 }

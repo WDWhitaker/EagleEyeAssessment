@@ -8,8 +8,6 @@ namespace EagleEyeAssessment.Models
 {
     public class MovieMetadata
     {
-       
-        //Id,MovieId,Title,Language,Duration,ReleaseYear
         public int Id { get; set; }
         public int MovieId { get; set; }
         public string Title { get; set; }
